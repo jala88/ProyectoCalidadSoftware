@@ -42,7 +42,7 @@ public class test2 {
 
         //List<WebElement> inputs =  driver.findElements(By.tagName("input"));
         //System.out.println("Cantidad de elementos: "+inputs.size());
-        //driver.quit();
+        driver.quit();
 
 
     }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
        //String url = "https://www.6pm.com/";
         System.setProperty("webdriver.chrome.driver", "D:\\Installation Project\\Project\\ProyectoCalidadSoftware\\src\\main\\resources\\Drivers\\chromeDriver.exe");
 
@@ -23,8 +23,13 @@ public class Test3 {
 
         //Maximize browser
         driver.manage().window().maximize();
+        Thread.sleep(4000);
 
         socialMedia.click();
+
+        Thread.sleep(4000);
+
+        driver.quit();
 
     }
 }
